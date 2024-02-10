@@ -1,14 +1,17 @@
 @extends('frontend.frontend_dashboard')
 @section('main')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
     <!--Page Title-->
     <section class="page-title centred"
         style="background-image: url({{ asset('frontend/assets/images/background/page-title-5.jpg') }});">
         <div class="auto-container">
             <div class="content-box clearfix">
-                <h1>User Profile </h1>
+                <h1>Change Password </h1>
                 <ul class="bread-crumb clearfix">
                     <li><a href="index.html">Home</a></li>
-                    <li>User Profile </li>
+                    <li>Change Password</li>
                 </ul>
             </div>
         </div>
@@ -53,7 +56,11 @@
                             <div class="widget-title">
 
                             </div>
+
+
                             @include('frontend.dashboard.dashboard_sidebar')
+
+
                         </div>
 
                     </div>
@@ -68,58 +75,48 @@
                             <div class="inner-box">
 
                                 <div class="lower-content">
-                                    <h3>Including Animation In Your Design System.</h3>
 
 
 
 
+                                    <form action="{{ route('user.password.update') }}" method="post" class="default-form"
+                                        enctype="multipart/form-data">
+                                        @csrf
 
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="card-body" style="background-color: #1baf65;">
-                                                <h1 class="card-title" style="color: white; font-weight: bold;">0</h1>
-                                                <h5 class="card-text"style="color: white;"> Approved properties</h5>
 
-                                            </div>
+
+                                        <div class="form-group">
+                                            <label>Old Password</label>
+                                            <input type="password" name="old_password"
+                                                class="form-control @error('old_password') is-invalid @enderror"
+                                                id="old_password">
+                                            @error('old_password')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
                                         </div>
 
-                                        <div class="col-md-4">
-                                            <div class="card-body" style="background-color: #ffc107;">
-                                                <h1 class="card-title" style="color: white; font-weight: bold; ">0</h1>
-                                                <h5 class="card-text"style="color: white;"> Pending approve properties</h5>
-
-                                            </div>
+                                        <div class="form-group">
+                                            <label>New Password </label>
+                                            <input type="password" name="new_password"
+                                                class="form-control @error('new_password') is-invalid @enderror"
+                                                id="new_password">
+                                            @error('new_password')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
                                         </div>
 
 
-                                        <div class="col-md-4">
-                                            <div class="card-body" style="background-color: #002758;">
-                                                <h1 class="card-title" style="color: white; font-weight: bold;">0</h1>
-                                                <h5 class="card-text"style="color: white; "> Rejected properties</h5>
-
-                                            </div>
+                                        <div class="form-group">
+                                            <label>Confirm New Password</label>
+                                            <input type="password" name="new_password_confirmation" class="form-control"
+                                                id="new_password_confirmation">
                                         </div>
 
-                                    </div>
 
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="blog-details-content">
-                        <div class="news-block-one">
-                            <div class="inner-box">
-
-                                <div class="lower-content">
-                                    <h3>Activity Logs</h3>
-                                    <hr>
-
-
-
+                                        <div class="form-group message-btn">
+                                            <button type="submit" class="theme-btn btn-one">Save Changes </button>
+                                        </div>
+                                    </form>
 
 
 
@@ -129,10 +126,6 @@
 
 
                     </div>
-
-
-
-
 
 
                 </div>
@@ -145,7 +138,8 @@
 
     <!-- subscribe-section -->
     <section class="subscribe-section bg-color-3">
-        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+        <div class="pattern-layer" style="background-image: url({{ asset('frontend/assets/images/shape/shape-2.png') }});">
+        </div>
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-lg-6 col-md-6 col-sm-12 text-column">

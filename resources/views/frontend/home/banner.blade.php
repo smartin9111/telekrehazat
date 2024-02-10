@@ -8,10 +8,7 @@
             <div class="search-field">
                 <div class="tabs-box">
                     <div class="tab-btn-box">
-                        <ul class="tab-btns tab-buttons centred clearfix">
-                            <li class="tab-btn active-btn" data-tab="#tab-1">BUY</li>
-                            <li class="tab-btn" data-tab="#tab-2">RENT</li>
-                        </ul>
+
                     </div>
                     <div class="tabs-content info-group">
                         <div class="tab active-tab" id="tab-1">
@@ -62,7 +59,7 @@
                                             </div>
                                         </div>
                                         <div class="search-btn">
-                                            <button type="submit"><i class="fas fa-search"></i>Search</button>
+                                            <button type="submit"><i class="fas fa-search"></i>Keresés</button>
                                         </div>
                                     </form>
                                 </div>
