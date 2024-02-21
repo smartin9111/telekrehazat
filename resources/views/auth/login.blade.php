@@ -26,7 +26,7 @@
             <div class="row clearfix">
                 <div class="col-xl-8 col-lg-12 col-md-12 offset-xl-2 big-column">
                     <div class="sec-title">
-
+                        <h2>ss</h2>
                     </div>
                     <div class="tabs-box">
                         <div class="tab-btn-box">
@@ -108,6 +108,14 @@
                                         </div>
                                     </form>
                                     <div class="othre-text">
+
+                                        <div class="flex items-center justify-end mt-4">
+                                            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                href="{{ route('login') }}">
+                                                {{ __('Already registered?') }}
+                                            </a>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +123,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- ragister-section end -->
     <script>

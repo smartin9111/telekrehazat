@@ -57,12 +57,16 @@ Route::middleware(['auth', 'role:company'])->group(function () {
     Route::get('/company/dashboard', [CompanyController::class, 'CompanyDashboard'])->name('compnay.dashboard');
 }); // End group company middleware
 
-//Admin group middleware
-Route::middleware(['auth', 'role:admin'])->group(function () {
 
+
+
+/// Admin Group Middleware
+Route::middleware(['auth', 'role:admin'])->group(function () {
     // Property All Route
     Route::controller(PropertyController::class)->group(function () {
+
         Route::get('/all/property', 'AllProperty')->name('all.property');
         Route::get('/add/property', 'AddProperty')->name('add.property');
+        Route::post('/store/property', 'StoreProperty')->name('store.property');
     });
-});
+}); // End Group Admin Middleware

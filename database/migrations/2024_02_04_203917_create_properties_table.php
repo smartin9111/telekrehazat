@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
             $table->string('typePlanName')->nullable();
-            $table->string('property_code')->nullable();
+            $table->string('company_name')->nullable();
+            $table->string('company_link')->nullable();
             $table->integer('priceNet')->nullable();
             $table->integer('priceGross')->nullable();
             $table->string('floorMap')->nullable();
@@ -36,11 +37,10 @@ return new class extends Migration
             $table->string('renewableEnergy')->nullable();
             $table->string('energeticClassification')->nullable();
             $table->string('priceAvailability')->nullable();
-            $table->string('property_thumbnail');
+            $table->string('property_thambnail');
             $table->integer('company_id')->nullable();
             $table->string('status')->default(0);
             $table->text('short_description')->nullable();
-            $table->text('long_description')->nullable();
             $table->timestamps();
         });
     }
