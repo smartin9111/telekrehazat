@@ -60,34 +60,12 @@ class PropertyController extends Controller
             'coolingType' => $request->coolingType,
             'renewableEnergy' => $request->renewableEnergy,
             'energeticClassification' => $request->energeticClassification,
-            'partnerName' => $request->partnerName,
+            'company_name' => $request->company_name,
+            'company_link' => $request->company_link,
             'short_description' => $request->short_description,
-
-            'lowest_price' => $request->lowest_price,
-            'max_price' => $request->max_price,
-            'short_descp' => $request->short_descp,
-            'long_descp' => $request->long_descp,
-            'bedrooms' => $request->bedrooms,
-            'bathrooms' => $request->bathrooms,
-            'garage' => $request->garage,
-            'garage_size' => $request->garage_size,
-
-            'property_size' => $request->property_size,
-            'property_video' => $request->property_video,
-            'address' => $request->address,
-            'city' => $request->city,
-            'state' => $request->state,
-            'postal_code' => $request->postal_code,
-
-            'neighborhood' => $request->neighborhood,
-            'latitude' => $request->latitude,
-            'longitude' => $request->longitude,
-            'featured' => $request->featured,
-            'hot' => $request->hot,
-            'agent_id' => $request->agent_id,
-            'status' => 1,
             'property_thambnail' => $save_url,
         ]);
-        dd($property);
+
+        $property->save();
     } // End Method
 }

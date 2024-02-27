@@ -255,7 +255,13 @@
                                     <div class="col-sm-6">
                                         <div class="mb-3">
                                             <label class="form-label">Partner Neve</label>
-                                            <input type="text" name="partnerName" class="form-control">
+                                            <input type="text" name="company_name" class="form-control">
+                                        </div>
+                                    </div><!-- Col -->
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Partner Link</label>
+                                            <input type="text" name="company_link" class="form-control">
                                         </div>
                                     </div><!-- Col -->
                                     <!-- Col -->
