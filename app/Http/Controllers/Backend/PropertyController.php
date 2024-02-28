@@ -66,6 +66,15 @@ class PropertyController extends Controller
             'property_thambnail' => $save_url,
         ]);
 
-        $property->save();
-    } // End Method
+        $saveResult = $property->save();
+
+        if ($saveResult) {
+            return redirect('/all/property')->with('success', 'Adat sikeresen mentve!');
+        } else {
+            // Sikertelen mentés esetén visszatérés az előző oldalra hibaüzenettel
+            return back()->with('error', 'Hiba történt az adatok mentése közben.');
+        }
+    }
+
+    // End Method
 }

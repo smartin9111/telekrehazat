@@ -120,7 +120,7 @@
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <div class="mb-3">
-                                            <label class="form-label">Megközelíthetőség (akadálymentes vagy nem)</label>
+                                            <label class="form-label">Megközelíthetőség</label>
                                             <select name="accessibility" class="form-select"
                                                 id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Megközelíthetőség</option>
@@ -137,9 +137,7 @@
                                     </div><!-- Col -->
                                     <div class="col-sm-4">
                                         <div class="mb-3">
-                                            <label class="form-label">Készültségi szint (szerkezetkészen, emelt
-                                                szerkezetkészen, kulcsrakészen, prémium
-                                                kulcsrakészen)</label>
+                                            <label class="form-label">Készültségi szint </label>
                                             <select name="levelOfPreparation" class="form-select"
                                                 id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Készültségi szint</option>
@@ -154,8 +152,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="mb-3">
-                                            <label class="form-label">Falazat típusa (lenyíló clt sip fa ytong tégla liapor
-                                                fém gerenda)</label>
+                                            <label class="form-label">Falazat típusa</label>
                                             <select name="wallType" class="form-select" id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Falazat típusa</option>
                                                 <option value="lenyilo">Lenyíló</option>
@@ -172,7 +169,7 @@
                                     </div><!-- Col -->
                                     <div class="col-sm-6">
                                         <div class="mb-3">
-                                            <label class="form-label">Alap (lenyíló sáv lemez talajcsavar)</label>
+                                            <label class="form-label">Alap </label>
                                             <select name="foundation" class="form-select" id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Alap</option>
                                                 <option value="lenyilo_sav">Sáv</option>
