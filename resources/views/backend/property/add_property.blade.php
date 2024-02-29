@@ -81,7 +81,7 @@
                                     <div class="col-sm-3">
                                         <div class="mb-3">
                                             <label class="form-label">Szintek száma</label>
-                                            <input type="number" name="floors" class="form-control">
+                                            <input type="text" name="floors" class="form-control">
                                         </div>
                                     </div><!-- Col -->
                                     <div class="col-sm-3">
@@ -95,7 +95,7 @@
                                     <div class="col-sm-3">
                                         <div class="mb-3">
                                             <label class="form-label">Fürdőszobák száma</label>
-                                            <input type="number" name="bathrooms" class="form-control">
+                                            <input type="text" name="bathrooms" class="form-control">
                                         </div>
                                     </div><!-- Col -->
                                     <div class="col-sm-3">
@@ -172,8 +172,9 @@
                                             <label class="form-label">Alap </label>
                                             <select name="foundation" class="form-select" id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Alap</option>
-                                                <option value="lenyilo_sav">Sáv</option>
+                                                <option value="sav">Sáv</option>
                                                 <option value="lemez">Lemez</option>
+                                                <option value="nincs">Nincs</option>
                                                 <option value="talajcsavar">Talajcsavar</option>
                                             </select>
                                         </div>
@@ -196,6 +197,7 @@
                                                 <option value="kalyha">Kályha</option>
                                                 <option value="kazan">Kazán</option>
                                                 <option value="klima">Klíma</option>
+                                                <option value="nincs">Nincs</option>
                                             </select>
                                         </div>
                                     </div><!-- Col -->
@@ -211,6 +213,7 @@
                                                 <option value="hoszivattyu">Hőszivattyú</option>
                                                 <option value="geotermikus">Geotermikus</option>
                                                 <option value="napelem">Napelem</option>
+                                                <option value="nincs">Nincs</option>
                                             </select>
                                         </div>
                                     </div><!-- Col -->
@@ -220,12 +223,12 @@
                                             <select name="coolingType" class="form-select"
                                                 id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Fűtés energia ellátása</option>
-                                                <option value="lenyilo_sav">Lenyíló</option>
-                                                <option value="lemez">Klíma</option>
+                                                <option value="klima">Klíma</option>
                                                 <option value="hoszivattyu">Hőszivattyú</option>
                                                 <option value="mennyezet_hutes">Mennyezet hűtés</option>
                                                 <option value="geotermikus">Geotermikus</option>
                                                 <option value="napelem">Napelem</option>
+                                                <option value="nincs">Nincs</option>
                                             </select>
                                         </div>
                                     </div><!-- Col -->
@@ -239,7 +242,7 @@
                                                 <option value="hosivattyu">Hőszivattyú</option>
                                                 <option value="geoterm">Geoterm</option>
                                                 <option value="egyeb">Egyéb</option>
-
+                                                <option value="nincs">Nincs</option>
                                             </select>
                                         </div>
                                     </div><!-- Col -->
