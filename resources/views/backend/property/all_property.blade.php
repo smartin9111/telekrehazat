@@ -43,13 +43,13 @@
 
                                         <th>Image </th>
 
-                                        <th>Name </th>
+                                        <th>Type Plan Name </th>
 
-                                        <th>P Type </th>
+                                        <th>Company Name </th>
 
-                                        <th>Status Type </th>
+                                        <th>Price</th>
 
-                                        <th>City </th>
+                                        <th>Start Date of Ad </th>
 
                                         <th>Status </th>
 
@@ -69,13 +69,13 @@
                                             <td><img src="{{ asset($item->property_thambnail) }}"
                                                     style="width:70px; height:40px;"> </td>
 
-                                            <td>{{ $item->property_name }}</td>
+                                            <td>{{ $item->typePlanName }}</td>
 
-                                            <td>{{ $item->ptype_id }}</td>
+                                            <td>{{ $item->company_name }}</td>
 
-                                            <td>{{ $item->property_status }}</td>
+                                            <td>{{ $item->priceGross  }}</td>
 
-                                            <td>{{ $item->city }}</td>
+                                            <td>{{ $item->created_at }}</td>
 
                                             <td>
 
