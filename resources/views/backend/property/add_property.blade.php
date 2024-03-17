@@ -124,8 +124,8 @@
                                             <select name="accessibility" class="form-select"
                                                 id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Megközelíthetőség</option>
-                                                <option value="yes">akadálymentes</option>
-                                                <option value="no">Nem akadálymentes</option>
+                                                <option value="igen">akadálymentes</option>
+                                                <option value="nem">Nem akadálymentes</option>
                                             </select>
                                         </div>
                                     </div><!-- Col -->
@@ -141,10 +141,10 @@
                                             <select name="levelOfPreparation" class="form-select"
                                                 id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Készültségi szint</option>
-                                                <option value="szerkezetkeszen">Szerkezetkészen</option>
-                                                <option value="emelt_szerkezetkesze">Emelt szerkezetkészen</option>
-                                                <option value="kulcsrakesze">Kulcsrakészen</option>
-                                                <option value="premium_kulcsrakeszen">Prémium kulcsrakészen</option>
+                                                <option value="szerkezetkészen">Szerkezetkészen</option>
+                                                <option value="emelt szerkezetkésze">Emelt szerkezetkészen</option>
+                                                <option value="kulcsrakészen">Kulcsrakészen</option>
+                                                <option value="prémium kulcsrakészen">Prémium kulcsrakészen</option>
                                             </select>
                                         </div>
                                     </div><!-- Col -->
@@ -155,14 +155,13 @@
                                             <label class="form-label">Falazat típusa</label>
                                             <select name="wallType" class="form-select" id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Falazat típusa</option>
-                                                <option value="lenyilo">Lenyíló</option>
                                                 <option value="clt">CLT</option>
                                                 <option value="sip">SIP</option>
                                                 <option value="fa">Fa</option>
                                                 <option value="ytong">Ytong</option>
-                                                <option value="tegla">Tégla</option>
+                                                <option value="tégla">Tégla</option>
                                                 <option value="liapor">Liapor</option>
-                                                <option value="fem">Fém</option>
+                                                <option value="fém">Fém</option>
                                                 <option value="gerenda">Gerenda</option>
                                             </select>
                                         </div>
@@ -172,7 +171,7 @@
                                             <label class="form-label">Alap </label>
                                             <select name="foundation" class="form-select" id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Alap</option>
-                                                <option value="sav">Sáv</option>
+                                                <option value="sáv">Sáv</option>
                                                 <option value="lemez">Lemez</option>
                                                 <option value="nincs">Nincs</option>
                                                 <option value="talajcsavar">Talajcsavar</option>
@@ -187,16 +186,16 @@
                                             <select name="heatingType" class="form-select"
                                                 id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Fűtés típusa</option>
-                                                <option value="levego_levego">Levegő-levegő</option>
-                                                <option value="levego_viz">Levegő-víz</option>
-                                                <option value="hoszivattyu">Hőszivattyú</option>
-                                                <option value="padlofutes">Padlófűtés</option>
-                                                <option value="menyezetfutes">Mennyezetfűtés</option>
-                                                <option value="futopanel">Fűtőpanel</option>
-                                                <option value="radiator">Radiátor</option>
-                                                <option value="kalyha">Kályha</option>
-                                                <option value="kazan">Kazán</option>
-                                                <option value="klima">Klíma</option>
+                                                <option value="levegő-levegő">Levegő-levegő</option>
+                                                <option value="levegő-víz">Levegő-víz</option>
+                                                <option value="hőszivattyú">Hőszivattyú</option>
+                                                <option value="padlőfűtes">Padlófűtés</option>
+                                                <option value="menyezetfűtes">Mennyezetfűtés</option>
+                                                <option value="fűtőpanel">Fűtőpanel</option>
+                                                <option value="radiátor">Radiátor</option>
+                                                <option value="kályha">Kályha</option>
+                                                <option value="kazán">Kazán</option>
+                                                <option value="klíma">Klíma</option>
                                                 <option value="nincs">Nincs</option>
                                             </select>
                                         </div>
@@ -207,10 +206,10 @@
                                             <select name="heatingEnergySupply" class="form-select"
                                                 id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Fűtés energia ellátása</option>
-                                                <option value="gaz">Gáz</option>
-                                                <option value="aram">Áram</option>
+                                                <option value="gáz">Gáz</option>
+                                                <option value="áram">Áram</option>
                                                 <option value="fa">Fa</option>
-                                                <option value="hoszivattyu">Hőszivattyú</option>
+                                                <option value="hőszivattyú">Hőszivattyú</option>
                                                 <option value="geotermikus">Geotermikus</option>
                                                 <option value="napelem">Napelem</option>
                                                 <option value="nincs">Nincs</option>
@@ -222,10 +221,10 @@
                                             <label class="form-label">Hűtés típusa</label>
                                             <select name="coolingType" class="form-select"
                                                 id="exampleFormControlSelect1">
-                                                <option selected="" disabled="">Fűtés energia ellátása</option>
-                                                <option value="klima">Klíma</option>
-                                                <option value="hoszivattyu">Hőszivattyú</option>
-                                                <option value="mennyezet_hutes">Mennyezet hűtés</option>
+                                                <option selected="" disabled="">Hűtés típusa</option>
+                                                <option value="klíma">Klíma</option>
+                                                <option value="hőszivattyú">Hőszivattyú</option>
+                                                <option value="mennyezethűtes">Mennyezethűtés</option>
                                                 <option value="geotermikus">Geotermikus</option>
                                                 <option value="napelem">Napelem</option>
                                                 <option value="nincs">Nincs</option>
@@ -239,9 +238,9 @@
                                                 id="exampleFormControlSelect1">
                                                 <option selected="" disabled="">Megújuló energia</option>
                                                 <option value="napelem">Napelem</option>
-                                                <option value="hosivattyu">Hőszivattyú</option>
+                                                <option value="hőszivattyú">Hőszivattyú</option>
                                                 <option value="geoterm">Geoterm</option>
-                                                <option value="egyeb">Egyéb</option>
+                                                <option value="egyéb">Egyéb</option>
                                                 <option value="nincs">Nincs</option>
                                             </select>
                                         </div>
@@ -269,16 +268,43 @@
                                 <div class="col-sm-12">
                                     <div class="mb-3">
                                         <label class="form-label">Short Description</label>
-                                        <textarea name="short_description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        <textarea class="form-control" name="short_description" id="tinymceExample" rows="10"></textarea>
+
                                     </div>
                                 </div><!-- Col -->
 
+                                <div class="mb-3">
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" name="featured" value="1" class="form-check-input"
+                                            id="checkInline1">
+                                        <label class="form-check-label" for="checkInline1">
+                                            Features Property
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="mb-3">
+                                                <label class="form-label">Ár érvényes</label>
+                                                <input type="text" name="priceAvailable" class="form-control">
+                                            </div>
+                                        </div><!-- Col -->
+                                        <div class="col-sm-4">
+                                            <div class="mb-3">
+                                                <label class="form-label">Telefonszám</label>
+                                                <input type="text" name="telephone" class="form-control">
+                                            </div>
+                                        </div><!-- Col -->
+                                        <div class="col-sm-4">
+                                            <div class="mb-3">
+                                                <label class="form-label">Céges Email</label>
+                                                <input type="mail" name="email" class="form-control">
+                                            </div>
+                                        </div><!-- Col -->
+                                    </div><!-- Row -->
+                                    <hr>
 
 
-                                <hr>
-
-
-                                <button type="submit" class="btn btn-primary">Save Changes </button>
+                                    <button type="submit" class="btn btn-primary">Save Changes </button>
 
                             </form>
                         </div>

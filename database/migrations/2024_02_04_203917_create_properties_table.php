@@ -42,6 +42,12 @@ return new class extends Migration
             $table->string('status')->default(0);
             $table->text('short_description')->nullable();
             $table->timestamps();
+            $table->string('featured')->nullable();
+            $table->string('available')->nullable();
+            $table->string('telephone')->nullable();
+            $table->string('email')->nullable();
+
+
         });
     }
 

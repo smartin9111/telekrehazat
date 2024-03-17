@@ -2132,7 +2132,7 @@ div#mCSB_1_container{
 
 .feature-block-one .inner-box .image-box .category{
   position: absolute;
-  left: 70px;
+  left: 30px;
   top: 10px;
   font-size: 12px;
   line-height: 26px;
@@ -2166,7 +2166,7 @@ div#mCSB_1_container{
 
 .feature-block-one .inner-box .lower-content .author-info .author{
   position: relative;
-  padding: 7px 0px 7px 52px;
+  padding: 7px 0px 7px 8px;
 }
 
 .feature-block-one .inner-box .lower-content .author-info .author .author-thumb{

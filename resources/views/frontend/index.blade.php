@@ -4,9 +4,7 @@
     @include('frontend.home.banner')
     <!-- banner-section end -->
 
-    <!-- category-section -->
-    @include('frontend.home.category')
-    <!-- category-section end -->
+
 
 
     <!-- feature-section -->
