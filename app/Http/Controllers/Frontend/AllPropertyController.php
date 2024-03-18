@@ -10,7 +10,7 @@ class AllPropertyController extends Controller
 {
      public function index(){
 
-        $property = Property::all();
+        $property = Property::paginate(8);
         return view('frontend.property.property_all',compact('property'));
 
     }// End Method 
