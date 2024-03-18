@@ -54,6 +54,7 @@
 
 
         </div>
-        <div class="more-btn centred"><a href="{{ route('properties.all') }}" class="theme-btn btn-one">Mind</a></div>
+        <div class="more-btn centred"><a href="{{ route('properties.all') }}" class="theme-btn btn-one">Összes</a>
+        </div>
     </div>
 </section>

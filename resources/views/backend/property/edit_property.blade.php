@@ -118,11 +118,11 @@
                                             <label class="form-label">Megközelíthetőség</label>
                                             <select name="accessibility" class="form-select" id="exampleFormControlSelect1">
                                                 <option disabled="">Megközelíthetőség</option>
-                                                <option value="yes"
+                                                <option value="igen"
                                                     {{ $property->accessibility == 'igen' ? 'selected' : '' }}>
                                                     akadálymentes
                                                 </option>
-                                                <option value="no"
+                                                <option value="nem"
                                                     {{ $property->accessibility == 'nem' ? 'selected' : '' }}>Nem
                                                     akadálymentes</option>
                                             </select>

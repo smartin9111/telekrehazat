@@ -38,7 +38,7 @@
                         </div>
                         <div class="discription-box content-widget">
                             <div class="title-box">
-                                <h4>Ház leírása</h4>
+                                <h4>Technológia</h4>
                             </div>
                             <div class="text">
                                 <p>{!! $property->short_description !!}</p>
@@ -47,7 +47,7 @@
 
                         <div class="details-box content-widget">
                             <div class="title-box">
-                                <h4>Ház részletei</h4>
+                                <h4>Részletek</h4>
                             </div>
                             <ul class="list clearfix">
                                 <li>Ár Bruttó: <span>{{ $property->priceGross }} Ft</span></li>
