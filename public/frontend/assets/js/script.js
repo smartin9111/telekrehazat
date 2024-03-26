@@ -501,30 +501,30 @@
 	if($('.price-range-slider').length){
 		$( ".price-range-slider" ).slider({
 			range: true,
-			min: 0,
-			max: 10000,
-			values: [ 1000, 5000 ],
+			min: 10000000,
+			max: 400000000,
+			values: [ 10000000, 400000000 ],
 			slide: function( event, ui ) {
 			$( "input.property-amount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
 			}
 		});
 		
-		$( "input.property-amount" ).val( $( ".price-range-slider" ).slider( "values", 0 ) + " - $" + $( ".price-range-slider" ).slider( "values", 1 ) );	
+		$( "input.property-amount" ).val( $( ".price-range-slider" ).slider( "values", 0 ) + " - Ft" + $( ".price-range-slider" ).slider( "values", 1 ) );	
 	}
 
 	//Area Range Slider
 	if($('.area-range-slider').length){
 		$( ".area-range-slider" ).slider({
 			range: true,
-			min: 0,
-			max: 7000,
-			values: [ 700, 4000 ],
+			min: 1,
+			max: 400,
+			values: [ 1, 400 ],
 			slide: function( event, ui ) {
 			$( "input.area-range" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
 			}
 		});
 		
-		$( "input.area-range" ).val( $( ".area-range-slider" ).slider( "values", 0 ) + " - sq ft" + $( ".area-range-slider" ).slider( "values", 1 ) );	
+		$( "input.area-range" ).val( $( ".area-range-slider" ).slider( "values", 0 ) + " - m2 " + $( ".area-range-slider" ).slider( "values", 1 ) );	
 	}
 
 

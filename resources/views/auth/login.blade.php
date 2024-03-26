@@ -10,10 +10,10 @@
         </div>
         <div class="auto-container">
             <div class="content-box clearfix">
-                <h1>Sign In</h1>
+                <h1>Bejelentkezés</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Sign In</li>
+                    <li><a href="/">Főoldal</a></li>
+                    <li>Bejelentkezés</li>
                 </ul>
             </div>
         </div>
@@ -63,6 +63,7 @@
                             <div class="tab" id="tab-2">
                                 <div class="inner-box">
                                     <h4>Regisztráció</h4>
+                                    <h3>Hamarosan!</h3>
                                     <form action="{{ route('register') }}" method="post" id="register-form"
                                         class="default-form">
                                         @csrf
@@ -111,7 +112,7 @@
                                         <div class="flex items-center justify-end mt-4">
                                             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                                 href="{{ route('login') }}">
-                                                {{ __('Already registered?') }}
+                                                {{ __('Már regisztráltál?') }}
                                             </a>
 
                                         </div>

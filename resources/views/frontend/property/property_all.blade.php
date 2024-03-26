@@ -17,7 +17,9 @@
                 <div class="auto-container">
                     <div class="item-shorting clearfix">
                         <div class="left-column pull-left">
-                            <h5>Search Reasults: <span>Showing 1-5 of 20 Listings</span></h5>
+                            <h5>Találat: {{ $property->total() }}<span> Mutat
+                                    {{ $property->firstItem() }}-{{ $property->lastItem() }}
+                                </span></h5>
                         </div>
                         <div class="right-column pull-right clearfix">
                             <div class="short-box clearfix">
@@ -73,7 +75,7 @@
 
                                             <ul class="more-details clearfix">
                                                 <li><i class="icon-14"></i>{{ $item->rooms }} Szobák</li>
-                                                <li><i class="icon-15"></i>{{ $item->baths }} Fürdők</li>
+                                                <li><i class="icon-15"></i>{{ $item->bathrooms }} Fürdők</li>
                                                 <li><i class="icon-16"></i>{{ $item->useFullArea }} m2</li>
                                             </ul>
                                             <div class="other-info-box clearfix">

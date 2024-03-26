@@ -139,6 +139,8 @@ class PropertyController extends Controller
 
 		]);
 
+
+
 	 	$notification = array(
             'message' => 'Property Updated Successfully',
             'alert-type' => 'success'

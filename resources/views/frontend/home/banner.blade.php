@@ -14,45 +14,59 @@
                         <div class="tab active-tab" id="tab-1">
                             <div class="inner-box">
                                 <div class="top-search">
-                                    <form action="index.html" method="post" class="search-form">
+                                    <form action="/properties/search" method="post" class="search-form">
+                                        @csrf
                                         <div class="row clearfix">
-                                            <div class="col-lg-4 col-md-12 col-sm-12 column">
+                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
                                                 <div class="form-group">
-                                                    <label>Search Property</label>
-                                                    <div class="field-input">
-                                                        <i class="fas fa-search"></i>
-                                                        <input type="search" name="search-field"
-                                                            placeholder="Search by Property, Location or Landmark..."
-                                                            required="">
+                                                    <label>Szoba</label>
+                                                    <div class="select-box">
+                                                        <i class="fas fa-bed"></i> <select name="rooms"
+                                                            class="rooms">
+                                                            <option data-display="Szobák száma">
+                                                                Szobák száma</option>
+                                                            <option value="1">1 szoba</option>
+                                                            <option value="2">2 szoba</option>
+                                                            <option value="3">3 szoba</option>
+                                                            <option value="4">4 szoba</option>
+                                                            <option value="5">5 szoba</option>
+                                                            <option value="6">6 szoba</option>
+
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="col-lg-4 col-md-6 col-sm-12 column">
                                                 <div class="form-group">
-                                                    <label>Location</label>
+                                                    <label>Fürdőszoba</label>
                                                     <div class="select-box">
-                                                        <i class="far fa-compass"></i>
-                                                        <select class="wide">
-                                                            <option data-display="Input location">Input
-                                                                location</option>
-                                                            <option value="1">New York</option>
-                                                            <option value="2">California</option>
-                                                            <option value="3">London</option>
-                                                            <option value="4">Maxico</option>
+                                                        <i class="fas fa-bath"></i> <select name="bathrooms"
+                                                            class="bathrooms">
+                                                            <option data-display="Fürdőszobák száma">
+                                                                Fürdőszobák száma</option>
+                                                            <option value="1">1 fürdőszoba</option>
+                                                            <option value="2">2 fürdőszoba</option>
+                                                            <option value="3">3 fürdőszoba</option>
+                                                            <option value="4">4 fürdőszoba</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4 col-md-6 col-sm-12 column">
                                                 <div class="form-group">
-                                                    <label>Property Type</label>
+                                                    <label>Állapot</label>
                                                     <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="All Type">All Type</option>
-                                                            <option value="1">Laxury</option>
-                                                            <option value="2">Classic</option>
-                                                            <option value="3">Modern</option>
-                                                            <option value="4">New</option>
+                                                        <select name="levelOfPreparation" class="levelOfPreparation">
+                                                            <option selected="Készültségi szint" disabled="">
+                                                                Készültségi szint
+                                                            </option>
+                                                            <option value="szerkezetkészen">Szerkezetkészen</option>
+                                                            <option value="emelt szerkezetkésze">Emelt szerkezetkészen
+                                                            </option>
+                                                            <option value="kulcsrakészen">Kulcsrakészen</option>
+                                                            <option value="prémium kulcsrakészen">Prémium kulcsrakészen
+                                                            </option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -61,114 +75,43 @@
                                         <div class="search-btn">
                                             <button type="submit"><i class="fas fa-search"></i>Keresés</button>
                                         </div>
-                                    </form>
+
                                 </div>
                                 <div class="switch_btn_one ">
                                     <button
-                                        class="nav-btn nav-toggler navSidebar-button clearfix search__toggler">Advanced
-                                        Search<i class="fas fa-angle-down"></i></button>
+                                        class="nav-btn nav-toggler navSidebar-button clearfix search__toggler">Részletes
+                                        Keresés<i class="fas fa-angle-down"></i></button>
                                     <div class="advanced-search">
                                         <div class="close-btn">
                                             <a href="#" class="close-side-widget"><i class="far fa-times"></i></a>
                                         </div>
                                         <div class="row clearfix">
+
+
                                             <div class="col-lg-4 col-md-6 col-sm-12 column">
                                                 <div class="form-group">
-                                                    <label>Distance from Location</label>
+                                                    <label>Rendezés</label>
                                                     <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Distance from Location">
-                                                                Distance from Location</option>
-                                                            <option value="1">Max Bath</option>
-                                                            <option value="2">Within 1 Mile</option>
-                                                            <option value="3">Within 2 Mile</option>
-                                                            <option value="4">Within 3 Mile</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Bedrooms</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Max Rooms">Max Rooms</option>
-                                                            <option value="1">One Rooms</option>
-                                                            <option value="2">Two Rooms</option>
-                                                            <option value="3">Three Rooms</option>
-                                                            <option value="4">Four Rooms</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Sort by</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Most Popular">Most Popular
+                                                        <select class="wide" name="priceGross">
+                                                            <option data-display="Rendezés Árszerint">Rendezés Árszerint
                                                             </option>
-                                                            <option value="1">Top Rating</option>
-                                                            <option value="2">New Rooms</option>
-                                                            <option value="3">Classic Rooms</option>
-                                                            <option value="4">Luxry Rooms</option>
+                                                            <option value="asc">Ár növekvő</option>
+                                                            <option value="desc">Ár csökkenő</option>
                                                         </select>
+
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Floor</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Select Floor">Select Floor
-                                                            </option>
-                                                            <option value="1">One Floor</option>
-                                                            <option value="2">Two Floor</option>
-                                                            <option value="3">Three Floor</option>
-                                                            <option value="4">Four Floor</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Bath</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Max Bath">Max Bath</option>
-                                                            <option value="1">Max Bath</option>
-                                                            <option value="2">Max Bath</option>
-                                                            <option value="3">Max Bath</option>
-                                                            <option value="4">Max Bath</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Agencies</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Any Agency">Any Agency
-                                                            </option>
-                                                            <option value="1">Any Agency</option>
-                                                            <option value="2">Agency 01</option>
-                                                            <option value="3">Agency 02</option>
-                                                            <option value="4">Agency 03</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                         </div>
                                         <div class="range-box">
                                             <div class="row clearfix">
                                                 <div class="col-lg-6 col-md-6 col-sm-12 column">
                                                     <div class="price-range">
-                                                        <h6>Select Price Range</h6>
+                                                        <h6>Bruttó Ár (Ft)</h6>
                                                         <div class="range-input">
                                                             <div class="input"><input type="text"
-                                                                    class="property-amount" name="field-name"
+                                                                    class="property-amount" name="propertyAmount"
                                                                     readonly=""></div>
                                                         </div>
                                                         <div class="price-range-slider"></div>
@@ -176,11 +119,10 @@
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12 column">
                                                     <div class="area-range">
-                                                        <h6>Select Area</h6>
+                                                        <h6>Hasznos Terület (m2)</h6>
                                                         <div class="range-input">
-                                                            <div class="input"><input type="text"
-                                                                    class="area-range" name="field-name"
-                                                                    readonly=""></div>
+                                                            <div class="input"><input type="text" class="area-range"
+                                                                    name="useFullArea" readonly=""></div>
                                                         </div>
                                                         <div class="area-range-slider"></div>
                                                     </div>
@@ -189,187 +131,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="tab" id="tab-2">
-                            <div class="inner-box">
-                                <div class="top-search">
-                                    <form action="index.html" method="post" class="search-form">
-                                        <div class="row clearfix">
-                                            <div class="col-lg-4 col-md-12 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Search Property</label>
-                                                    <div class="field-input">
-                                                        <i class="fas fa-search"></i>
-                                                        <input type="search" name="search-field"
-                                                            placeholder="Search by Property, Location or Landmark..."
-                                                            required="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Location</label>
-                                                    <div class="select-box">
-                                                        <i class="far fa-compass"></i>
-                                                        <select class="wide">
-                                                            <option data-display="Input location">Input
-                                                                location</option>
-                                                            <option value="1">New York</option>
-                                                            <option value="2">California</option>
-                                                            <option value="3">London</option>
-                                                            <option value="4">Maxico</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Property Type</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="All Type">All Type</option>
-                                                            <option value="1">Laxury</option>
-                                                            <option value="2">Classic</option>
-                                                            <option value="3">Modern</option>
-                                                            <option value="4">New</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="search-btn">
-                                            <button type="submit"><i class="fas fa-search"></i>Search</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="switch_btn_one ">
-                                    <button
-                                        class="nav-btn nav-toggler navSidebar-button clearfix search__toggler">Advanced
-                                        Search<i class="fas fa-angle-down"></i></button>
-                                    <div class="advanced-search">
-                                        <div class="close-btn">
-                                            <a href="#" class="close-side-widget"><i
-                                                    class="far fa-times"></i></a>
-                                        </div>
-                                        <div class="row clearfix">
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Distance from Location</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Distance from Location">
-                                                                Distance from Location</option>
-                                                            <option value="1">Max Bath</option>
-                                                            <option value="2">Within 1 Mile</option>
-                                                            <option value="3">Within 2 Mile</option>
-                                                            <option value="4">Within 3 Mile</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Bedrooms</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Max Rooms">Max Rooms</option>
-                                                            <option value="1">One Rooms</option>
-                                                            <option value="2">Two Rooms</option>
-                                                            <option value="3">Three Rooms</option>
-                                                            <option value="4">Four Rooms</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Sort by</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Most Popular">Most Popular
-                                                            </option>
-                                                            <option value="1">Top Rating</option>
-                                                            <option value="2">New Rooms</option>
-                                                            <option value="3">Classic Rooms</option>
-                                                            <option value="4">Luxry Rooms</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Floor</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Select Floor">Select Floor
-                                                            </option>
-                                                            <option value="1">One Floor</option>
-                                                            <option value="2">Two Floor</option>
-                                                            <option value="3">Three Floor</option>
-                                                            <option value="4">Four Floor</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Bath</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Max Bath">Max Bath</option>
-                                                            <option value="1">Max Bath</option>
-                                                            <option value="2">Max Bath</option>
-                                                            <option value="3">Max Bath</option>
-                                                            <option value="4">Max Bath</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12 column">
-                                                <div class="form-group">
-                                                    <label>Agencies</label>
-                                                    <div class="select-box">
-                                                        <select class="wide">
-                                                            <option data-display="Any Agency">Any Agency
-                                                            </option>
-                                                            <option value="1">Any Agency</option>
-                                                            <option value="2">Agency 01</option>
-                                                            <option value="3">Agency 02</option>
-                                                            <option value="4">Agency 03</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="range-box">
-                                            <div class="row clearfix">
-                                                <div class="col-lg-6 col-md-6 col-sm-12 column">
-                                                    <div class="price-range">
-                                                        <h6>Select Price Range</h6>
-                                                        <div class="range-input">
-                                                            <div class="input"><input type="text"
-                                                                    class="property-amount" name="field-name"
-                                                                    readonly=""></div>
-                                                        </div>
-                                                        <div class="price-range-slider"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-12 column">
-                                                    <div class="area-range">
-                                                        <h6>Select Area</h6>
-                                                        <div class="range-input">
-                                                            <div class="input"><input type="text"
-                                                                    class="area-range" name="field-name"
-                                                                    readonly=""></div>
-                                                        </div>
-                                                        <div class="area-range-slider"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>

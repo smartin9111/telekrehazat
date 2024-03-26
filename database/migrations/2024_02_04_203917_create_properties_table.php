@@ -43,7 +43,7 @@ return new class extends Migration
             $table->text('short_description')->nullable();
             $table->timestamps();
             $table->string('featured')->nullable();
-            $table->string('available')->nullable();
+            $table->string('priceAvailable')->nullable();
             $table->string('telephone')->nullable();
             $table->string('email')->nullable();
 

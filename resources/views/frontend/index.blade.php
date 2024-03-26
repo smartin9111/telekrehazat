@@ -12,48 +12,29 @@
     <!-- feature-section end -->
 
 
-    <!-- video-section -->
-    @include('frontend.home.video')
+    <!-- allservices-section -->
+    @include('frontend.home.allservices')
+    <!-- allservices-section-end -->
 
-    <!-- video-section end -->
-
-
-    <!-- deals-section -->
-    @include('frontend.home.deal')
-
-    <!-- deals-section end -->
-
-
-    <!-- testimonial-section end -->
-    @include('frontend.home.testimonial')
-
-    <!-- testimonial-section end -->
-
-
-    <!-- chooseus-section -->
-    @include('frontend.home.chooseus')
-    <!-- chooseus-section end -->
-
-
-    <!-- place-section -->
-    @include('frontend.home.place')
-
-    <!-- place-section end -->
 
 
     <!-- team-section -->
-    @include('frontend.home.team')
+    @include('frontend.home.inspiration')
     <!-- team-section end -->
 
+    <!-- articles-section -->
+    @include('frontend.home.articles')
+    <!-- articles-section end -->
+    <div id="house">
+        @include('frontend.home.guide')
+    </div>
+    <!-- chooseus-section -->
+    @include('frontend.home.clients')
+    <!-- chooseus-section end -->
 
-    <!-- cta-section -->
-    @include('frontend.home.cta')
-    <!-- cta-section end -->
 
 
-    <!-- news-section -->
-    @include('frontend.home.news')
-    <!-- news-section end -->
+
 
 
     <!-- download-section -->

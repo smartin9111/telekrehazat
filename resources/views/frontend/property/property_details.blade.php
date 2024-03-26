@@ -12,7 +12,7 @@
             <div class="content-box clearfix">
                 <h1>{{ $property->property_name }}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Főoldal</a></li>
                     <li>{{ $property->typePlanName }}</li>
                 </ul>
             </div>
@@ -54,6 +54,7 @@
                                 <li>Ár Nettó: <span>{{ $property->priceNet }} Ft</span></li>
                                 <li>Típusterv neve: <span>{{ $property->typePlanName }}</span></li>
 
+
                                 <li>Alaprajz neve: <span>{{ $property->floorMap }}</span></li>
                                 <li>Hasznos terület: <span>{{ $property->useFullArea }} m2</span></li>
                                 <li>Szintek: <span>{{ $property->floors }}</span></li>
@@ -71,6 +72,7 @@
                                 <li>Hűtés: <span>{{ $property->coolingType }}</span></li>
                                 <li>Megújuló energia <span>{{ $property->renewableEnergy }}</span></li>
                                 <li>Energia osztály: <span>{{ $property->energeticClassification }}</span></li>
+                                <li>Állapot: <span>{{ $property->levelOfPreparation }}</span></li>
                                 <li>Az ár érvényes: <span>{{ $property->priceAvailable }}</span></li>
                             </ul>
                         </div>

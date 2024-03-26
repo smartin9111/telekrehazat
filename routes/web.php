@@ -84,3 +84,27 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 Route::get('/property/details/{id}', [IndexController::class, 'PropertyDetails']);
 Route::get('/properties', [AllPropertyController::class, 'index'])->name('properties.all');
+Route::post('/properties/search', [AllPropertyController::class, 'searchAndFilter'])->name('properties.search');
+
+Route::get('/impressum', function () {
+    return view('/frontend/other_pages/impressum');
+});
+Route::get('/littlesmart', function () {
+    return view('/frontend/other_pages/littlesmart');
+});
+
+Route::get('/about_us', function () {
+    return view('/frontend/other_pages/about_us');
+});
+
+Route::get('/to_be_partner', function () {
+    return view('/frontend/other_pages/to_be_partner');
+});
+
+Route::get('/inspiration_details', function () {
+    return view('/frontend/other_pages/inspiration_details');
+});
+
+Route::get('/articles_details', function () {
+    return view('/frontend/other_pages/articles_details');
+});

@@ -8,7 +8,7 @@
 
     <title>TELEKREHÁZAT </title>
 
-    <!-- Fav Icon -->
+    <!-- Fav Icon-->
     <link rel="icon" href="{{ asset('frontend/assets/images/favicon.ico') }}" type="image/x-icon">
 
     <!-- Google Fonts -->
